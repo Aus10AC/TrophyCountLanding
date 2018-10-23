@@ -27,7 +27,7 @@
       </ul>
       <nav>
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo blue-text"><img class="logopicture">Logo</a>
+          <a href="#!" class="brand-logo blue-text"><img src="resources/images/logonew.png" class="logopicture"></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="" class="blue-text">About</a></li>
             <li><a href="" class="blue-text">FAQ</a></li>
@@ -42,6 +42,7 @@
 
           <div class="object">
             <div>
+              <img src="resources/images/logonew.png">
               <h1 data-text="Trophy Count">Trophy Count</h1>
             </div>
             <div class="countdown"></div>
@@ -49,12 +50,12 @@
               <p>Let me know when you launch!</p>
             </div>
             <div id="form" class="form-group mb-2">
-              <input type="text" id="staticEmail2" value="Enter your email...">
+              <input onfocus="if(this.value == 'Enter your email...'){this.value = '';}" type="text" [B]onblur="if(this.value == ''){this.value='Enter your email...';}"[/B] id="email" value="Enter your email..." />
               <button onclick="popUp()" type="submit" id="buttonn" class="btn btn-info mb-2">Submit</button>
             </div>
             <div class="font-awesome-icons">
               <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-twitter"></a>
+              <a href="https://twitter.com/TrophyCount?lang=en" target="_blank" class="fa fa-twitter"></a>
               <a href="#" class="fa fa-youtube"></a>
             </div>
           </div>
@@ -75,6 +76,14 @@
       </section>
 
       <section class="sec2" id="about">
+        <div class="title">
+          <h2>What is Trophy Count?</h2>
+          <p>
+            In short, Trophy Count is an eSports application that can be used on any device. We aim to provide a FREE premium service completely
+            unmatched by any other site that you're used to.
+          </p>
+          <button>Learn more</button>
+        </div>
       </section>
 
       <section class="sec3">
@@ -110,6 +119,7 @@
     </div>
 
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="resources/js/emailEnter.js"></script>
   <script src="resources/js/main.js"></script>
   <script src="resources/js/sweetalert.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
