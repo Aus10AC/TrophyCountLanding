@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.object {
+  background-color: rgba(255,255,255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.20), 0 0px 20px 1px rgba(0, 0, 0, 0.39);
+}
 /* Navigation Styles */
 
 .nav-wrapper {
@@ -27,9 +34,8 @@ html {
 /* Logos */
 
 .logopicture {
-  height: 50px;
-  padding-top: 9px;
-  padding-left: 13px;
+  height: 65px;
+  padding-left: 2px;
 }
 
 .object img {
@@ -107,14 +113,15 @@ section.sec3:before {
 }
 
 .title {
+  top: 0;
   height: 0 auto;
   margin: 0 auto;
   font-family: 'times new roman';
   padding: 30px;
-  opacity: 0.8;
-  background-color: #F5F5F5;
-  border: 3px solid white;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.1);
   box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.20), 0 0px 20px 1px rgba(0, 0, 0, 0.39);
+  box-sizing: border-box;
 }
 
 section.sec2 h2 {
@@ -129,6 +136,11 @@ section.sec2 p {
   padding: 15px;
 }
 
+section.sec2 img {
+  max-width: 70em;
+  max-height: 70em;
+}
+
 .title button {
   color: white;
   background-color: mediumseagreen;
@@ -137,6 +149,48 @@ section.sec2 p {
 
 .title button:hover {
   background-color: cornflowerblue;
+}
+
+/* section 3 */
+
+section.sec3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  font-family: 'times new roman';
+  width: 100%;
+}
+
+section .box {
+  width: 400px;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(255,255,255, 0.1);
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.20), 0 0px 20px 1px rgba(0, 0, 0, 0.39);
+  box-sizing: border-box;
+}
+
+section .box h2 {
+  color: #35DC9C;
+}
+
+.inputBox label {
+  font-size: 1.5em;
+  color: white;
+}
+
+.inputBox input {
+  color: white;
+}
+
+.submitbutton {
+  background-color: #35DC9C;
+  color: white;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 30%;
 }
 /* Section One content */
 
@@ -174,6 +228,32 @@ h1:before {
   margin: 1em;
 }
 
+/* side content */
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255,255,255, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+  width: 20%;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.20), 0 0px 20px 1px rgba(0, 0, 0, 0.39);
+  margin: 8em;
+}
+
+.side h1 {
+  font-size: 25px;
+  color: #35DC9C;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Countdown */
 
 .countdown {
@@ -204,8 +284,9 @@ h1:before {
 
 /* Form */
 
-#butonn {
-  display: inline;
+#form button {
+  display: inline-block;
+  margin: 13px 0 0 0;
 }
 
 #email {
@@ -213,12 +294,15 @@ h1:before {
   background-color: rgba(0, 0, 0, 0.20);
   border: 2px ridge white;
   text-align: center;
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Icons */
 
 .font-awesome-icons a {
-  padding: 1em;
+  padding: 10px;
   font-size: 1.3em;
   position: relative;
 }

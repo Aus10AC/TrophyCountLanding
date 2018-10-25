@@ -1,7 +1,7 @@
 function popUp(){
   swal({
     title: "Email Sent!",
-    text: "Thank you for signing up for Trophy Count alerts!",
+    text: "Thank you",
     icon: "success",
     button: "close",
     iconColor: "blue"
